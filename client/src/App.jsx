@@ -13,6 +13,7 @@ import CropBidCard from "./components/CropBidCard";
 
 import FarmerListing from "./components/FarmerListing";
 import Nav from "./components/Nav";
+import AddCrop from "./components/AddCrop";
 
 
 export default function App() {
@@ -23,7 +24,11 @@ export default function App() {
         <Route path="/" element={<FDashboard />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register/>}/>
-        <Route path="/farmer-dashboard" element={<Home />} />
+
+  
+
+        <Route path="/farmer-dashboard" element={<FDashboard />} />
+        <Route path="/farmer-dashboard/addCrop" element={<AddCrop />} />
 
         <Route path="/buyer-dashboard" element={<BDashboard/>}/>
         <Route path="/buyer-dashboard/crop-form" element={<SearchCrop/>} />
